@@ -25,7 +25,7 @@ import { useSearchParams } from 'next/navigation'
 const formSchema = z.object({
   template: z.string().min(1, "Please select a template"),
   employeeName: z.string().min(1, "Name is required"),
-  managerName: z.string().min(1, "Manager's name is required"),
+  managerName: z.string().min(1,  "Manager&apos;s name is required"),
   company: z.string().min(1, "Company name is required"),
   position: z.string().min(1, "Position is required"),
   lastWorkingDay: z.string().refine((date) => {
@@ -158,7 +158,7 @@ export function LetterGenerator() {
   };
 
   const handleClearDraft = () => {
-    if (window.confirm('Are you sure you want to clear the draft?')) {
+    if (window.confirm("Are you sure you want to clear the draft?")) {
       clearDraft();
       reset(defaultValues);
       setHasSavedDraft(false);
@@ -245,7 +245,7 @@ export function LetterGenerator() {
           </div>
 
           <div>
-            <Label htmlFor="managerName">Manager's Name</Label>
+            <Label htmlFor="managerName">Manager&apos;s Name</Label>
             <Input
               id="managerName"
               {...register('managerName')}

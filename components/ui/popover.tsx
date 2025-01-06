@@ -9,6 +9,8 @@ const Popover = PopoverPrimitive.Root
 
 const PopoverTrigger = PopoverPrimitive.Trigger
 
+
+
 interface PopoverContentProps extends React.HTMLAttributes<HTMLDivElement> {
   align?: "start" | "center" | "end"
   sideOffset?: number
@@ -40,6 +42,7 @@ const PopoverContent = React.forwardRef<HTMLDivElement, PopoverContentProps>(
     )
   }
 )
+PopoverContent.displayName = "PopoverContent"
 
 PopoverContent.defaultProps = {
   align: "start",

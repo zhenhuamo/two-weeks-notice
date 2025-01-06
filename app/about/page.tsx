@@ -2,6 +2,20 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Us | Two Weeks Notice Letter Generator',
+  description: 'Learn about our mission to help professionals create perfect resignation letters. Free tools and templates for career transitions.',
+  keywords: 'resignation letter generator, professional templates, career transition tools, two weeks notice help',
+  openGraph: {
+    title: 'About Two Weeks Notice Letter Generator',
+    description: 'Professional tools and templates for career transitions',
+    type: 'website',
+  }
+}
+
+
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
@@ -35,7 +49,7 @@ export default function AboutPage() {
         <section>
           <h2>Our Commitment</h2>
           <p>
-            We're committed to maintaining the highest standards of professionalism and ethics.
+            We&apos;re committed to maintaining the highest standards of professionalism and ethics.
             Our tools and resources are designed to help maintain positive professional
             relationships during career transitions.
           </p>

@@ -129,7 +129,7 @@ export default function GeneratorPage() {
               <h3 className="font-semibold mb-2">What format should I use?</h3>
               <p className="text-gray-600">
                 Our generator provides multiple formats including Word, PDF, and email templates. 
-                Choose the format that best suits your company's culture and requirements.
+                Choose the format that best suits your company&apos;s culture and requirements.
               </p>
             </div>
           </div>
