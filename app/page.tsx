@@ -25,7 +25,7 @@ export default function Home() {
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 pt-16 pb-24 lg:pt-24">
             <div className="text-center space-y-8">
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 tracking-tight">
-                Professional Two Weeks Notice11<br />
+                Professional Two Weeks Notice<br />
                 <span className="text-blue-600">Letter Generator</span>
               </h1>
               <p className="max-w-2xl mx-auto text-xl text-gray-600">
